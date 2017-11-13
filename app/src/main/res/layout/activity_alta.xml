@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Smartlux"
+            android:textSize="24sp"
+            android:layout_above="@+id/altaNombre"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="52dp" />
+
+        <EditText
+            android:id="@+id/altaNombre"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/altaDescripcion"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginStart="32dp"
+            android:hint="Nombre"
+            android:text="Nombre"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/altaDescripcion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="72dp"
+            android:hint="Descripcion"
+            android:text="Descripcion"
+            android:textSize="18sp"
+            android:layout_alignBottom="@+id/altaIP"
+            android:layout_alignLeft="@+id/altaNombre"
+            android:layout_alignStart="@+id/altaNombre" />
+
+        <EditText
+            android:id="@+id/altaIP"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/altaDescripcion"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/altaDescripcion"
+            android:layout_marginBottom="144dp"
+            android:hint="192.168.0.100"
+            android:text="IP"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginRight="39dp"
+            android:text="Cargar" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_weight="1"
+    android:backgroundTint="#ccc"
+    tools:padding="5dp">
+
+    <TextView
+        android:id="@+id/idNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/idIcono"
+        android:layout_toRightOf="@+id/idIcono"
+        android:paddingLeft="5dp"
+        android:text="Cocina"
+        android:textSize="18sp"
+        android:textStyle="bold"
+       />
+
+
+    <TextView
+        android:id="@+id/idDetalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idNombre"
+        android:layout_toEndOf="@+id/idIcono"
+        android:layout_toRightOf="@+id/idIcono"
+        android:padding="5dp"
+        android:text="Luz abajo de alacena"
+        />
+
+    <Switch
+        android:id="@+id/idSwitch"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+
+        android:textOff="Encender"
+        android:textOn="Apagar"
+
+        android:focusable="false"
+        />
+
+    <ImageView
+        android:id="@+id/idIcono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:elevation="0dp"
+        android:paddingLeft="5dp"
+
+       />
+
+
+</RelativeLayout>
+
+
